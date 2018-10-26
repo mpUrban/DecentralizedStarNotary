@@ -511,7 +511,7 @@
 
       var tokenId = document.getElementById("star-tokenId").value;
 
-      starNotary.createStar.sendTransaction(name, ra, dec, mag, story, {
+      starNotary.createStar.sendTransaction(name, ra, dec, mag, story, tokenId, {
         from: account
       }, function(error, result) {
         if (!error) {
@@ -537,6 +537,8 @@
         alert(error)
         return
       }
+
+      var tokenId = document.getElementById("star-tokenId").value;
 
       starNotary.tokenIdToStarInfo.call(tokenId, function(error, result) {
         if (!error) {
