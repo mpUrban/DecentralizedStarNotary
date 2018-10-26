@@ -50,20 +50,16 @@ ganache-cli -m 'conduct shop dumb crash pretty movie gesture ski calm beach inju
 node-gyp
 
 
-truffle deploy --network development --reset
+
+
+
+
+truffle compile
+then create:
 
 2_deploy_contracts.js
-https://study-hall.udacity.com/sg-562321-1911/rooms/community:nd1309:562321-cohort-1911-project-2297/community:thread-9656963047-230748?contextType=room
 
-
-
-
-
-
-https://github.com/nomiclabs/truffle-flattener
-
-
-
+truffle deploy --network development --reset
 
 
 
